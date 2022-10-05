@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<!-- Ejercicios de autoevaluación  5.11 Fusionar imágenes -->
+<!-- Coral Valencia Cruz-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicios de autoevaluación: 5.11</title>
+        <style type="text/css">
+            .img{
+                position: absolute;
+                width: 200px;
+                height: 244px;
+                left: 0;
+            }
+            .portada:hover .top{
+                opacity: 0;
+                -webkit-transition: opacity 3s linear;
+                transition: opacity 3s linear;
+            }
+            .portada:hover .top2{
+                opacity: 0;
+                -webkit-transition: opacity 3s linear 4s;
+                transition: opacity 3s linear 4s;
+            }
+            .portada:hover .top3{
+                opacity: 0;
+                -webkit-transition: opacity 3s linear 8s;
+                transition: opacity 3s linear 8s;
+            }
+            .portada:hover .top4{
+                opacity: 0;
+                -webkit-transition: opacity 3s linear 13s;
+                transition: opacity 3s linear 13s;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="../indicecvc.html">
+            <input type="submit" class="button" value="Regresar">
+        </form>
+        <h2>5.11 Fusionar imágenes)</h2>
+        <p>Modifique el ejemplo 5.14 utilizando cinco imágenes. Podría se interesante probar 
+            con imágenes de usted o de un miembro de su familia en distintas edades o en un paisaje en 
+            distintos momentos. Establezca el valor de transition-duration en 3s y de transition-timing-function 
+            en linear.
+        </p>
+        <hr>
+        <div class="portada">
+            <img class="img" src="Project 4 (4).jpg" alt="cinco">
+            <img class="img top4" src="Project 4 (3).jpg" alt="cuatro">
+            <img class="img top3" src="Project 4 (2).jpg" alt="tres">
+            <img class="img top2" src="Project 4 (1).jpg" alt="dos">
+            <img class="img top" src="Project 4.jpg" alt="uno">
+        </div>
+    </body>
+</html>

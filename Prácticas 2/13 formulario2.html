@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<!--Fig 2.15; formulario2.html-->
+<!--Formulario que usa una variedad de componentes-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Más formularios</title>
+    </head>
+
+    <body>
+        <form action="../indicecvc.html">
+            <input type="submit" class="button" value="Regresar">
+        </form>
+        <h1>Formulario de retoalimentación</h1>
+        <p>Llene este formulario para ayudarnos a mejorar nuestro sitio</p>
+
+
+        <form method="post" action="http://www.deitel.com">
+           
+            <input type="hidden" name="destinatario" 
+            value="deitel@deitel.com">
+            <input type="hidden" name="asunto" 
+            value="Formulario de retroalimentación">
+            <input type="hidden" name="redirigir" 
+            value="principal.html">
+
+            <p><label>Nombre:
+                <input name="nombre" type="text" size="25">
+            </label></p>
+
+            <!--<textarea> crea un cuadro de texto multilinea-->
+            <p><label>Comentarios:
+                <textarea name="comentarios"
+                rows="4" cols="36">Escriba aquí los comentarios. </textarea>
+            </label></p>
+
+            <!--<input type="password" inserta un-->
+            <!--cuadro de tecto que aparece enmascarado con-->
+            <!--caracteres de asteriscos-->
+            <p><label>Dirección de correo electrónico:
+                <input name="email" type="password" size="25">
+            </label></p>
+
+            <p>
+                <strong>Cosas que le gustaron</strong>
+
+                <label>Diseño del sitio
+                    <input name="cosasgustaron" type="checkbox"
+                            value="Diseno"></label>
+                <label>Vínculos
+                    <input name="cosasgustaron" type="checkbox" value="Vinculos">
+                </label>
+                <label>Facilidad de uso
+                    <input name="cosasgustaron" type="checkbox" value="Facilidad">
+                </label>
+                <label>Imágenes
+                    <input name="cosasgustaron" type="checkbox" value="Imagenes">
+                </label>
+                <label>Código fuente
+                    <input name="cosasgustaron" type="checkbox" value="Codigo">
+                </label>
+            </p>
+
+            <!--<input type="radio" crea un botón de-->
+            <!--opción. La diferencia entre botones de opción-->
+            <!--y casillas de verifición es que solo puede seleccionarse-->
+            <!--un botón de opción en un grupo-->
+            <p>
+                <strong>Cómo llegó a nuestro sitio</strong>
+
+                <label>Motor de búsqueda
+                    <input name="comositio" type="radio" value="motor busqueda">
+                </label>
+                <label>Vínculos desde otro sitio
+                    <input name="comositio" type="radio" value="vinculo">
+                </label>
+                <label>Sitio Web Deitel.com
+                    <input name="comositio" type="radio" value="deitel.com">
+                </label>
+                <label>Referencia en un libro
+                    <input name="comositio" type="radio" value="libro">
+                </label>
+                <label>Otro
+                    <input name="comositio" type="radio" value="Otro">
+                </label>
+            </p>
+
+            <p>
+                <label>Califique nuestro sitio:
+
+                    <!--la etiqueta <select> presenta una lista-->
+                    <!--despegable con opciones indicadas por las-->
+                    <!--etiqueta <option> -->
+
+
+                    <select name="calificacion">
+                        <option selected>Sorprendente</option>
+                        <option>10</option>
+                        <option>09</option>
+                        <option>08</option>
+                        <option>07</option>
+                        <option>06</option>
+                        <option>05</option>
+                        <option>04</option>
+                        <option>03</option>
+                        <option>02</option>
+                        <option>01</option>
+                        <option>01</option>
+                        <option>Malo</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="submit" value="Borrar">
+            </p>
+        </form>
+    </body>
+
+</html>
